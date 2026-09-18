@@ -16,3 +16,10 @@ class Balanza:
             return -1
         else:
             return 0
+
+    def emaitza(self, bola):
+
+        if(bola.peso > 1):
+            return "Has acertado la bola con mas peso en " + str(self.veces_usado) + " veces"
+        else:
+            return "Has fallado, la bola con mas peso no es la que has elegido. Has usado la balanza " + str(self.veces_usado) + " veces"
